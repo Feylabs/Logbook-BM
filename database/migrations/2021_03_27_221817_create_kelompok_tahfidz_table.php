@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKelompokTahfidzsTable extends Migration
+class CreateKelompokTahfidzTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,7 +17,7 @@ class CreateKelompokTahfidzsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('mentor_id')->nullable();
-            $table->foreign('mentor_id')->references('id')->on('guru')->onDelete('set null');
+            $table->foreign('mentor_id')->references('id')->on('guru')->onDelete('cascade');
             $table->string('nama_kelompok')->nullable()->unique();
         });
     }

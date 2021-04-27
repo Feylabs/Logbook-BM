@@ -248,11 +248,12 @@ class SantriController extends Controller
         $object->kelas = $request->class;
         $object->jenjang = $request->fakultas;
 
-        $bin_pathImage = "/public/web_files/santri/profile/";
-        $saveFileNameImage = $request->nis.".".$fileImage->getClientOriginalExtension();;
-        $fileImage->move(base_path($bin_pathImage),$saveFileNameImage );
+        $bin_pathDatabase = "/web_files/santri/profile/";
+        $bin_pathMove = "/public/web_files/santri/profile/";
+        $saveFileNameImage = $request->nis.".".$fileImage->getClientOriginalExtension();
+        $fileImage->move(base_path($bin_pathMove),$saveFileNameImage );
 
-        $object->photo_path=$bin_pathImage.$saveFileNameImage;
+        $object->photo_path=$bin_pathDatabase.$saveFileNameImage;
 
         $object->save();
 

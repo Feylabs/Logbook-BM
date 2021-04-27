@@ -27,6 +27,8 @@ class CreateSantrisTable extends Migration
             $table->string('contact')->nullable();
             $table->string('photo_path')->nullable();
             $table->unsignedBigInteger('mentor_id')->nullable();
+            $table->unsignedBigInteger('group_id')->nullable();
+            $table->foreign('group_id')->references('id')->on('kelompok_tahfidz')->onDelete('set null');
             $table->foreign('mentor_id')->references('id')->on('admins')->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
