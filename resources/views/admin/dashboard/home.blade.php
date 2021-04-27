@@ -133,10 +133,10 @@
             <div class="col-lg-8 col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Sebaran Asrama</h4>
+                        <h4 class="card-title">Sebaran Fakultas</h4>
                         <div class="net-income mt-4 position-relative" style="height:294px;"></div>
                         <ul class="list-inline text-center mt-5 mb-2">
-                            <li class="list-inline-item text-muted font-italic">Sebaran Asrama Santri</li>
+                            <li class="list-inline-item text-muted font-italic">Sebaran Fakultas</li>
                         </ul>
                     </div>
                 </div>
@@ -144,10 +144,10 @@
             <div class="col-lg-12 col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Sebaran Kelas Santri</h4>
+                        <h4 class="card-title">Sebaran Kelas Mahasiswa</h4>
                         <div class="class-stat mt-4 position-relative" style="height:294px;"></div>
                         <ul class="list-inline text-center mt-5 mb-2">
-                            <li class="list-inline-item text-muted font-italic">Sebaran Asrama Santri</li>
+                            <li class="list-inline-item text-muted font-italic">Sebaran Kelas</li>
                         </ul>
                     </div>
                 </div>

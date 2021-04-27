@@ -3,12 +3,12 @@
 @section('page-breadcrumb')
     <div class="row">
         <div class="col-7 align-self-center">
-            <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Santri</h4>
+            <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Anggota</h4>
             <div class="d-flex align-items-center">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb m-0 p-0">
-                        <li class="breadcrumb-item text-muted active" aria-current="page">Santri</li>
-                        <li class="breadcrumb-item text-muted" aria-current="page">Manage Data Santri</li>
+                        <li class="breadcrumb-item text-muted active" aria-current="page">Anggota</li>
+                        <li class="breadcrumb-item text-muted" aria-current="page">Manage Data Anggota</li>
                     </ol>
                 </nav>
             </div>
@@ -30,72 +30,11 @@
 
     <div class="row">
         <div class="col-12">
-            <!-- *************************************************************** -->
-            <!-- Start First Cards -->
-            <!-- *************************************************************** -->
-            <div class="card-group">
-                <div class="card border-right">
-                    <div class="card-body">
-                        <div class="d-flex d-lg-flex d-md-block align-items-center">
-                            <div>
-                                <div class="d-inline-flex align-items-center">
-                                    <h2 id="widgetCountSantri" class="text-dark mb-1 font-weight-medium">
-                                        {{ $widget['countSantri'] }}</h2>
-
-                                </div>
-                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Jumlah Santri</h6>
-                            </div>
-                            <div class="ml-auto mt-md-3 mt-lg-0">
-                                <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-right">
-                    <div class="card-body">
-                        <div class="d-flex d-lg-flex d-md-block align-items-center">
-                            <div>
-                                <h2 id="widgetCountSMP" class="text-dark mb-1 w-100 text-truncate font-weight-medium">
-                                    {{ $widget['countSMP'] }}
-                                </h2>
-                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">SANTRI SMP
-                                </h6>
-                            </div>
-                            <div class="ml-auto mt-md-3 mt-lg-0">
-                                <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-right">
-                    <div class="card-body">
-                        <div class="d-flex d-lg-flex d-md-block align-items-center">
-                            <div>
-                                <div class="d-inline-flex align-items-center">
-                                    <h2 id="widgetCountSMA" class="text-dark mb-1 font-weight-medium">
-                                        {{ $widget['countSMA'] }}</h2>
-
-                                </div>
-                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">SANTRI SMA</h6>
-                            </div>
-                            <div class="ml-auto mt-md-3 mt-lg-0">
-                                <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- *************************************************************** -->
-            <!-- End First Cards -->
-            <!-- *************************************************************** -->
-            <!-- *************************************************************** -->
-        </div>
-        <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Manage Data Santri</h4>
+                    <h4 class="card-title">Manage Data Anggota</h4>
                     <h6 class="card-subtitle">
-                        Daftar Santri Albinaa, Edit data dengan tombol di sisi kanan
+                        Daftar Anggota, Edit data dengan tombol di sisi kanan
                     </h6>
                     {{-- <button type="button" class="btn btn-outline-primary mb-2 btn-add-new">Tambah Data Santri Baru</button> --}}
 
@@ -107,9 +46,9 @@
                                     <th>No</th>
                                     <th>NIS</th>
                                     <th>Nama</th>
+                                    <th>Foto</th>
                                     <th>Kelas</th>
-                                    <th>Asrama</th>
-                                    <th>Jenjang</th>
+                                    <th>Fakultas</th>
                                     <th>Edit</th>
                                 </tr>
                             </thead>
@@ -177,14 +116,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="destroy-modalLabel">Apakah Anda Yakin Ingin Menghapus Data Santri Ini ?</h5>
+                    <h5 class="modal-title" id="destroy-modalLabel">Apakah Anda Yakin Ingin Menghapus Data Anggota Ini ?</h5>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h5>Aksi Ini akan menghapus seluruh mutaba'ah yang sudah dikumpulkan santri</h5>
+                    <h5>Aksi Ini akan menghapus seluruh mutaba'ah yang sudah dikumpulkan anggota</h5>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
@@ -208,7 +147,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h5>Password Siswa Akan Direset Menjadi AlbinaaIBS</h5>
+                    <h5>Password Siswa Akan Direset Menjadi HamasahBadanMentoring</h5>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
@@ -335,12 +274,14 @@
                         name: 'nama'
                     },
                     {
-                        data: 'kelas',
-                        name: 'kelas'
+                        data: 'img',
+                        name: 'img',
+                        orderable: true,
+                        searchable: true
                     },
                     {
-                        data: 'asrama',
-                        name: 'asrama'
+                        data: 'kelas',
+                        name: 'kelas'
                     },
                     {
                         data: 'jenjang',
@@ -439,13 +380,13 @@
                     console.log(response);
                     $("#edit-modal").modal("hide")
                     $('#table_santri').DataTable().ajax.reload();
-                    swal("Sukses", "Berhasil Mengupdate Password Santri ", "success");
+                    swal("Sukses", "Berhasil Mengupdate Password Anggota ", "success");
                 },
                 error: function(xhr, error, code) {
                     var err = eval("(" + xhr.responseText + ")");
                     console.log(error);
                     console.log(err);
-                    swal("Error", "Gagal Mengupdate Password Santri ", "error");
+                    swal("Error", "Gagal Mengupdate Password Anggota ", "error");
                 }
             });
         })

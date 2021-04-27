@@ -9,7 +9,7 @@
                     <ol class="breadcrumb m-0 p-0">
                         <li class="breadcrumb-item text-muted active" aria-current="page">Mutaba'ah</li>
                         <li class="breadcrumb-item text-muted" aria-current="page">Report</li>
-                        <li class="breadcrumb-item text-muted" aria-current="page">Seluruh Santri</li>
+                        <li class="breadcrumb-item text-muted" aria-current="page">Seluruh Anggota</li>
                     </ol>
                 </nav>
             </div>
@@ -133,7 +133,7 @@
                             <thead class="bg-primary text-white">
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Santri</th>
+                                    <th>Nama</th>
                                     <th>NIS</th>
                                     <th>Kelas</th>
                                     <th>Asrama</th>
@@ -212,7 +212,7 @@
                                     </h2>
 
                                 </div>
-                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">SANTRI MENGISI MUTABA'AH
+                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Anggota MENGISI MUTABA'AH
                                 </h6>
                             </div>
                             <div class="ml-auto mt-md-3 mt-lg-0">
@@ -228,7 +228,7 @@
                             <div>
                                 <h2 class="text-dark mb-1 w-100 text-truncate font-weight-medium">
                                     {{ count($widget['santriNotFill']) }}</h2>
-                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">SANTRI TIDAK MENGISI
+                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">ANGGOTA TIDAK MENGISI
                                 </h6>
                             </div>
                             <div class="ml-auto mt-md-3 mt-lg-0">
@@ -265,7 +265,7 @@
             <div class="card">
                 <img class="card-img-top" src="holder.js/100x180/" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Santri Yang Tidak Mengisi Mutaba'ah</h4>
+                    <h4 class="card-title">Anggota Yang Tidak Mengisi Mutaba'ah</h4>
                     <div class="table-responsive">
                         <table id="table_record_nf" class="table table-hover table-warning table-bordered no-wrap"
                             style="width:100%">

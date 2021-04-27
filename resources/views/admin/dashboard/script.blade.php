@@ -22,7 +22,7 @@
                 label: {
                     show: false
                 },
-                title: 'Santri',
+                title: 'Anggota',
                 width: 18
             },
 

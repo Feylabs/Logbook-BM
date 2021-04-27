@@ -3,12 +3,12 @@
 @section('page-breadcrumb')
     <div class="row">
         <div class="col-7 align-self-center">
-            <h1 class="page-title text-truncate text-dark font-weight-medium mb-1">Edit Data Santri</h1>
+            <h1 class="page-title text-truncate text-dark font-weight-medium mb-1">Edit Data Anggota</h1>
             <div class="d-flex align-items-center">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb m-0 p-0">
                         <li class="breadcrumb-item text-muted active" aria-current="page">Data</li>
-                        <li class="breadcrumb-item text-muted active" aria-current="page">Santri</li>
+                        <li class="breadcrumb-item text-muted active" aria-current="page">Anggota</li>
                         <li class="breadcrumb-item text-muted" aria-current="page">Edit</li>
                     </ol>
                 </nav>
@@ -16,7 +16,7 @@
             <div class="mt-4">
                 <a href="{{ URL::to('/') }}/admin/data/santri/manage">
                     <i class="fas fa-lg fa-arrow-circle-left mr-3"></i>
-                    Kembali Ke Menu Santri
+                    Kembali Ke Menu Anggota
                 </a>
 
             </div>
@@ -41,7 +41,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header bg-primary text-white rounded-top">
-                        <h4 class="mb-0 "> Edit Data Santri</h4>
+                        <h4 class="mb-0 "> Edit Data Anggota</h4>
                     </div>
 
                     <div class="card-body">

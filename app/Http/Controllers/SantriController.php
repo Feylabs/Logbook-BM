@@ -38,13 +38,17 @@ class SantriController extends Controller
                 ->orderBy('created_at', 'DESC');
             return DataTables::of($data)
                 ->addIndexColumn()
+                ->addColumn('img', function ($row) {
+                    $img = '  <img class="rounded-circle" width="90px" height="90px" src="'.$row->photo_path.'" alt="">';
+                    return $img;
+                })
                 ->addColumn('action', function ($row) {
                     $btn = '<div class="d-flex"><a href="' . url("admin/data/santri/$row->id/edit") . '" id="' . $row->id . '" class="btn btn-primary btn-sm ml-2">Edit</a>';
                     $btn .= '<a href="javascript:void(0)" id="' . $row->id . '" class="btn btn-danger btn-sm ml-2 btn-delete">Delete</a>';
                     $btn .= '<a href="javascript:void(0)" id="' . $row->id . '" class="btn btn-warning btn-sm ml-2 btn-res-pass">Reset Password</a></div>';
                     return $btn;
                 })
-                ->rawColumns(['action'])
+                ->rawColumns(['action','img'])
                 ->make(true);
         }
 
@@ -130,8 +134,8 @@ class SantriController extends Controller
     {
         $id = $request->id;
         $santri = Santri::findOrFail($id);
-        //New Password is AlbinaaIBS
-        $santri->password = '$2y$12$yEeLQTZtnfT77kjbTSFHJuSCD4g3Q6J1T9ourXCb.T8wpDZerCGW.';
+        //New Password is HamasahBadanMentoring
+        $santri->password = '$2y$12$Iac3Cj.7eVM6o7vrV.3jOOZu1EF8P5vsf9maay1C.NnfklvmKrMA.';
         $santri->save();
     }
 
