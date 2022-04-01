@@ -118,7 +118,7 @@
                                 src="{{ URL::to('/bootstrap_ui/') }}/assets/images/logo_main.png" alt="wrapkit">
                         </div>
                         <h2 class="mt-3 text-center">Sign Up</h2>
-                        <p class="text-center">Mutaba'ah Harian Badan Mentoring</p>
+                        <p class="text-center">Mutaba'ah Harian </p>
                         <form class="mt-4" action="{{ url('/santri/storeSelf') }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
@@ -157,7 +157,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Nama</label>
-                                        <input required class="form-control  @error('nama') is-invalid @enderror" 
+                                        <input required class="form-control  @error('nama') is-invalid @enderror"
                                             name="nama" type="text" placeholder="Masukkan Nama">
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Email</label>
-                                        <input required class="form-control  @error('email') is-invalid @enderror" 
+                                        <input required class="form-control  @error('email') is-invalid @enderror"
                                             name="email" type="text" placeholder="Masukkan Email">
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Line ID</label>
-                                        <input required class="form-control  @error('line_id') is-invalid @enderror" 
+                                        <input required class="form-control  @error('line_id') is-invalid @enderror"
                                             name="line_id" type="text" placeholder="Line ID">
                                     </div>
                                 </div>
@@ -181,19 +181,17 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Kontak (WA)</label>
-                                        <input required class="form-control  @error('contact') is-invalid @enderror" 
+                                        <input required class="form-control  @error('contact') is-invalid @enderror"
                                             name="contact" type="text" placeholder="Kontak">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="">Fakultas</label>
+                                        <label for="">Jenjang</label>
                                         <select required class="form-control" required name="fakultas" id="">
-                                          <option value="FT">FT</option>
-                                          <option value="FIK">FIK</option>
-                                          <option value="FIF">FIF</option>
-                                          <option value="FKEB">FKEB</option>
+                                          <option value="SMP">SMP</option>
+                                          <option value="SMA">SMA</option>
                                         </select>
                                       </div>
                                 </div>
@@ -211,7 +209,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Kelas</label>
-                                        <input required class="form-control  @error('class') is-invalid @enderror" 
+                                        <input required class="form-control  @error('class') is-invalid @enderror"
                                             name="class" type="text" placeholder="Masukkan Kelas">
                                             <small>Tanpa Spasi , Kapital misal : SI-42-06</small>
                                         </div>
@@ -225,8 +223,8 @@
                                     </div>
                                 </div>
 
-                              
-                              
+
+
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="pwd">Password</label>
@@ -283,11 +281,11 @@
             console.log('callback - particles.js config loaded');
         });
 
-        
+
 
     </script>
 
-    
+
 
 </body>
 
