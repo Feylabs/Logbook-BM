@@ -118,7 +118,7 @@
                                 src="{{ URL::to('/bootstrap_ui/') }}/assets/images/logo_main.png" alt="wrapkit">
                         </div>
                         <h2 class="mt-3 text-center">Sign In</h2>
-                        <p class="text-center">Mutaba'ah Harian Badan Mentoring</p>
+                        <p class="text-center">Mutaba'ah Harian Ramadhan</p>
                         <form class="mt-4" action="{{ url('/login/admin/proc') }}" method="post">
                             {{ csrf_field() }}
 
@@ -164,7 +164,7 @@
                                     <button type="submit" class="btn btn-block btn-dark">Sign In</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Dept Kaderisasi <br> Badan Mentoring © {{ \Carbon\Carbon::now()->year }} <br>
+                                    SMPIT BAITUSSALAM 2 CANGKRINGAN © {{ \Carbon\Carbon::now()->year }} <br>
                                     <a href="{{ url('/login') }}"><small>Klik Disini Untuk Login
                                             Anggota</small></a>
                                 </div>

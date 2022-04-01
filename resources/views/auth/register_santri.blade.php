@@ -241,7 +241,7 @@
                                     <button type="submit" class="btn btn-block btn-dark">Registrasi</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Dept Kaderisasi <br> Badan Mentoring © {{ \Carbon\Carbon::now()->year }} <br>
+                                    SMPIT BAITUSSALAM 2 CANGKRINGAN © {{ \Carbon\Carbon::now()->year }} <br>
                                     <a href="{{url('/login')}}"><small>Klik Disini Untuk Login</small></a>
                                 </div>
                             </div>

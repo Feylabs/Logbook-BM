@@ -53,7 +53,6 @@ class LoginController extends Controller
     {
         $this->validate($request, [
             'email'   => 'required|email',
-            'password' => 'required|min:6'
         ]);
 
         if (Auth::guard('admin')->attempt(
@@ -79,7 +78,6 @@ class LoginController extends Controller
     {
         $this->validate($request, [
             'nis'   => 'required',
-            'password' => 'required|min:6'
         ]);
 
 
